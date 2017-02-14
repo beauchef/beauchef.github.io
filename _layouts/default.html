@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>{{site.title}}</title>
+    <meta name="description" content="{{site.description}}">
+    <meta name="author" content="{{site.author}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css">
+    <link rel="stylesheet" href="{{site.baseurl}}stylesheets/main.css">
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                    <span class="mdl-layout__title">Jean-François Beauchef</span>
+                </span>
+            </div>
+            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a class="mdl-navigation__link is-active" href="{{site.baseurl}}/index.html">About</a>
+                    <a class="mdl-navigation__link" href="{{site.baseurl}}/projects.html">Projects</a>
+                    <a class="mdl-navigation__link" href="{{site.baseurl}}/interests.html">Interests</a>
+                    <a class="mdl-navigation__link" href="{{site.baseurl}}/contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link is-active" href="{{site.baseurl}}/index.html">About</a>
+                <a class="mdl-navigation__link" href="{{site.baseurl}}/projects.html">Projects</a>
+                <a class="mdl-navigation__link" href="{{site.baseurl}}/interests.html">Interests</a>
+                <a class="mdl-navigation__link" href="{{site.baseurl}}/contact.html">Contact</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+
+            {{ content }}
+
+            <div class="social-btn-container">
+                <button class="mdl-button mdl-js-button mdl-button--raised social-btn social-btn__linkedin">
+                    <a href="https://www.linkedin.com/in/{{site.linkedin_username}}" class="social-btn__link" role="button" title="LinkedIn"></a>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--raised social-btn social-btn__github">
+                    <a href="https://github.com/{{site.github_username}}" class="social-btn__link" role="button" title="GitHub"></a>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--raised social-btn social-btn__twitter">
+                    <a href="https://twitter.com/{{site.twitter_username}}" class="social-btn__link" role="button" title="Twitter"></a>
+                </button>
+            </div>
+            <footer class="docs-text-styling docs-footer mdl-mini-footer mdl-color--grey-900">
+                &copy; Copyright {{ site.inceptionYear }}-{{ 'now' | date: "%Y" }} {{site.author}}
+            </footer>
+        </main>
+    </div>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+</html>

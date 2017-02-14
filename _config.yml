@@ -1,0 +1,22 @@
+# Site settings
+title: Jean-François Beauchef
+author: Jean-François Beauchef
+email: jean-francois@beauchef.com
+inceptionYear: 2017
+description: > 
+  Jean-François Beauchef's personal web page.
+  Various contact information.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://jfb.one" # the base hostname & protocol for your site, e.g. http://example.com
+linkedin_username: beauchef
+github_username:  beauchef
+twitter_username: jf_beauchef
+
+# Build settings
+markdown: kramdown
+#theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,58 @@
+.title-bar {
+    min-height: 10px;
+}
+
+.social-btn-container {
+    text-align: center;
+    background-color: white;
+}
+
+.social-btn-container ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.social-btn-container ul>li {
+    display: inline; 
+}
+
+.social-btn-container ul>li>a {
+    margin: 0 8px; 
+}
+
+.social-btn {
+    padding: 0px;
+    margin: 8px;
+    width: 64px;
+    height: 64px;
+}
+
+.social-btn__link {
+    text-decoration: none;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;    
+}
+
+.social-btn__linkedin {
+    background-image: url(../images/iconmonstr-linkedin-2-64.png);
+}
+
+.social-btn__github {
+    background-image: url(../images/iconmonstr-github-2-64.png);
+}
+
+.social-btn__twitter {
+    background-image: url(../images/iconmonstr-twitter-2-64.png);
+}
+
+footer.docs-text-styling {
+    display: block;
+    text-align: center;
+}
